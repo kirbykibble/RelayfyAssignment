@@ -1,0 +1,243 @@
+body {
+    background-color: #E3E3DC;
+}
+#header {
+    background-color: #DD1416;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    border-radius: 3px;
+}
+
+/*
+******************
+******************
+Product Styling
+******************
+******************
+*/
+#productList {
+    display: flex;
+/*    height: 40vh;*/
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    flex-basis: auto;
+}
+#product {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    flex-flow: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    transition: background-size ease 0.5s;
+}
+#separator {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#details {
+    width: 8vw;
+    opacity: 0;
+    margin-left: -8vw;
+    font-size: 2vh;
+    word-wrap: normal;
+    transition: all ease 0.5s;
+    background-color: #E3DFDC;
+    text-align: center;
+    font-family: sans-serif;
+    color:rgba(0,0,0,0);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#prodTitle {
+    height: 3.5vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+/*    align-self: flex-end;*/
+    background-color: rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+#orderBut {
+    background-color: #DD1416;
+    text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: -0.5vh;
+    height: 4vh;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+    font-weight: 700;
+    color: #FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    transition: all ease 0.1s;
+    cursor: pointer;
+}
+#orderBut:hover, #sDel:hover {
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+}
+#orderBut:active {
+    background-color: #960E10;
+}
+
+#prompt {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    width: 105vw;
+    height: 105vh;
+    margin-top: -5vh;
+    margin-left: -1vw;
+    z-index: 10;
+    
+    display:none;
+    align-items: center;
+    justify-content: space-around;
+}
+#pbox {
+    background-color: #E3E3DC;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+#pTitle {
+    font-family: sans-serif;
+    font-size: 5vh;
+    font-weight: 700;
+}
+#cancel {
+    background-color: #DD1416;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 2vw;
+    font-weight: 700;
+    width: 10vw;
+    padding-left: 2px;
+    margin-left: 1vw;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    transition: all ease 0.1s;
+    cursor: pointer;
+}
+#pOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#option {
+    background-color: #DD1416;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 2vw;
+    flex-grow: 1;
+    width: 10vw;
+    margin: 1vw;
+    padding: 2px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    transition: all ease 0.1s;
+    cursor: pointer;
+}
+#option:active, #cancel:active, #sDel:active, #place-order-button:active {
+    background-color: #960E10;
+}
+#option:hover, #cancel:hover, #place-order-button:hover  {
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+}
+
+/*
+******************
+******************
+Cart Styling
+******************
+******************
+*/
+#selected-products-header {
+    margin-top: 10px;
+    background-color: #DD1416;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 3.5vh;
+    font-weight: 700;
+    border-radius: 3px;
+}
+#selected-products {
+    display: flex;
+    flex-flow: row wrap;
+}
+#selected {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1vw;
+    min-height: 20vh;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#sId {
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 3vh;
+    padding: 20px;
+    white-space: nowrap;
+    text-overflow: clip;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#sDel {
+    background-color: #DD1416;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+******************
+******************
+Payment Styling
+******************
+******************
+*/
+
+#payment_amount {
+    color: #000000;
+    font-family: sans-serif;
+}
+#place-order-button {
+    background-color: #DD1416;
+    font-family: sans-serif;
+    font-size: 200%;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    font-weight: 700;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    transition: all ease 0.1s;
+    cursor: pointer;
+}
+#place-order-button:disabled {
+    background-color: #804242;
+    cursor: auto;
+}
