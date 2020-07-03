@@ -16,4 +16,6 @@ If you wish to run this locally, you will need to download and install the node 
 ## Other Information
 A lot of the provided code was refactored to rely more heavily on the JavaScript DOM. This is due to a personal familiarity with the subject matter. Regardless, I am ready and willing to become more familiar with jQuery.
 
+That being said, I have left a lot of commented code in this project, mainly to highlight what I've changed. (Normally I would delete this, but I don't want to cause confusion)
+
 The provided assignment is mobile friendly! This is achieved primarily through flex-boxing, and should be usable on most mobile screen sizes. It is also friendly for the visually-imparied, with high-contrast colors and simple, easy to read font. 
